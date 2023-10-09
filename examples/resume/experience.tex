@@ -11,114 +11,135 @@
 
 %---------------------------------------------------------
   \cventry
-    {DevOps Engineer} % Job title
-    {Dunamu Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Sep. 2023 - Present} % Date(s)
-    {
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Founding Member \& Site Reliability Engineer \& Infrastructure Team Lead} % Job title
-    {Danggeun Pay Inc. (KarrotPay)} % Organization
-    {Seoul, S.Korea} % Location
-    {Mar. 2021 - Jun. 2023} % Date(s)
+    {Staff Software Architect} % Job title
+    {GE Healthcare} % Organization
+    {Waukesha, Wisconsin} % Location
+    {April 2022 - Present} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Everything that matters.}
-        \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
-        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
-        \item {Established a standardized base for declarative management of infrastructures and service deployments, enabling operational efficiency and consistency. Over 90\% of AWS resources were all managed through standardized terraform modules. All add-ons and service workloads on the Kubernetes cluster were managed on a GitOps basis with Kustomize and ArgoCD.}
-        \item {Saved over 30\% of the overall AWS costs by establishing a quarterly purchasing strategiy for RI (Reserved Instance) and SP (Savings Plan) and by introducing Graviton instances.}
-        \item {Established a core architecture for regulating of outbound DNS traffic in multi-account and multi-VPC environments utilizing AWS Route53 DNS Firewall and FMS. This significantly increased the level of security confidence in the financial sector's segregated environment.}
-        \item {Introduced Okta employee identity solution in the company, establishing security policies and configuring SSO integration with over 20 enterprise systems including AWS, GitHub, Slack, Google Workspace. Set up a Hub and Spoke architecture, enabling a collaborative account structure with the parent company, Daangn Market.}
+      \item {\textbf{WPA Supplicant: Converted thousands of lines of GEHC additions to open source WPA supplicant (core and QT GUI) into atomic commits.}}
+      \item {\textbf{FIPS: Investigated and documented Linux support for FIPS with detailed focus on Wi-Fi support.}}
+      \item {\textbf{Implemented network container aware netlink based network state monitoring code.}}
+      \item {\textbf{Improved Wi-Fi performance by patching Linux Wi-Fi Driver} to fully utilize all channels and capabilities allowed by regulatory domain. Patched driver compiled and packaged for SUSE via the 'Kernel Module Package' RPM spec.}
+      \item {\textbf{Implementing code to properly configure IP Address and DNS from GUI} in coordination with wicked network manager (SUSE) and dnsmasq.}
+      \item {\textbf{Implemented direct barcode scanner input to Java application} via direct connection to Linux input event subsystem.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Site Reliability Engineer} % Job title
-    {Danggeun Market Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Feb. 2021 - Mar. 2021} % Date(s)
-    {
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Founding Member \& Director of Infrastructure Division} % Job title
-    {Kasa} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2018 - Jan. 2021} % Date(s)
+    {Staff Engineer - OS Architect} % Job title
+    {Johnson Controls} % Organization
+    {Milwaukee, Wisconsin} % Location
+    {Jan 2019 - April 2022} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
-        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
-        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
-        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
-        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
-        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
-        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
-        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
-        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
+      \item {\textbf{Added display and proprietary input panel to Linux based embedded system.}
+        Implemented SPI GPIO device driver for MAX6966 chip for input and backlight.
+        Modified existing tinydrm display driver to drive display.
+        Used Wayland protocol and compositor to drive the display.
+        Wrote application code to connect to display and input device via Wayland interface.
+        Diagnosed and resolved hardware issues to make the device work.
+      }
+      \item {\textbf{Analyzed, improved and determined limit of network performance in embedded system.}
+        Identified multiple performance bottlenecks in specific IMX6 based embedded system.
+        This included problems with SSL, limitations of the IMX6 network device, impact of packet loss on TCP performance, etc.
+        Completed detailed analysis and documentation of Linux Work Queue as it related to IP stack and specific issues with the IMX6 device usecase and asymmetries between the ingress and egress paths.
+        Tested various traffic shaping algorithms to reduce jitter and increase bi-directional throughput.
+      }
+      \item {\textbf{Implemented thermal resistance testing and power profiling framework in Python.}
+        Implemented test framework and completed testing to determine thermal resistance (heat dissipation capacity) of system.
+        Test framework executed various stress-ng tests on target while monitoring CPU temperature and power consumption over time.
+        Python code interfaced with a Keithley DMM6500 in real time to measure power consumption of device under test.
+        Testing results were used to compare and contrast thermal performance of new prototypes against the original system.
+        Testing was able to show how long various tasks (example large file transfer) could execute at full CPU clock before thermal limits forced CPU throttling.
+      }
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Architect} % Job title
-    {Omnious. Co., Ltd.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2017 - May. 2018} % Date(s)
+    {Senior Technical Consultant} % Job title
+    {RedHat} % Organization
+    % {Intel Next Generation Standards} % Organization
+    {Remote} % Location
+    {Jan 2018 - Jan 2019} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
+      \item {Made open source contributions to the libvirt daemon adding support for QEMU / KVM virtualization features.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - Jun. 2017} % Date(s)
+    {Senior Staff Software Engineer} % Job title
+    {Intel} % Organization
+    % {Intel Next Generation Standards} % Organization
+    {Lake Zurich, Illinois} % Location
+    {2013 - 2016} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
+      \item {\textbf{Improved competitiveness of Intel 4G Cellular Modem by
+        significantly increasing IP data transfer rate and efficiency} by
+          applying best practices from Linux Kernel and Networking Device
+          Drivers to optimize Modem data path in collaboration with a
+          multinational team of engineers.}
+      \item {\textbf{Optimized architecture decisions by delivering new and
+        unprecedented visualizations} of control flow during data transfers
+          by creating custom programs (Ruby) to extract control flow graphs from ARM
+          ETM trace data.}
+        \item {\textbf{Accelerated architecture decisions by rapidly prototyping
+          and profiling data transfers between virtual machines} to clarify performance expectations and optimize virtual machines and driver configurations.
+          Created custom programs (Ruby) to configure virtual
+          machines using libvirt + KVM, launched and execute data transfers between machines, and
+          captured performance data using Linux 'perf tools'.}
+        \item {\textbf{Optimized software decision making by creating a custom
+          interactive visualization web app} allowing developers to fully understand the performance impact of decisions on a wide range of CPU performance metrics.
+          Visualization Web App was created using D3, Angular and Rails.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
+    {Principal Software Engineer} % Job title
+    {Motorola Mobile Devices} % Organization
+    {Libertyville, Illinois} % Location
+    {1998 - 2013} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
+      \item {\textbf{Delivered wireless internet access to millions of customers
+        using Motorola Phones and 3G/4G Modems over many years.}
+          Held increasing levels of responsibility starting as data network
+          component developer progressing to responsibility for data networking
+          architecture at top of Modem stack including IPv6, Network Device
+          Drivers, Mobile IP, Modem API, Android Interfacing, VoIP, IMS, Wi-Fi and VPN.
+          Leveraged Open Source and Linux whenever possible to deliver highly advanced feature sets with absolute minimum development cost.
+          Supported and collaborated with multinational development teams to deliver solutions.}
+        \item {\textbf{Provided a well functioning and stable cellular modem interface to customers.}
+  Led change control board responsible for reviewing and approving public 4G Modem interface changes.  
+  Delivered technical leadership for Modem's "Vendor RIL" interface to Android and Android data network functioning in general.}
+        \item {\textbf{Improved competitiveness of Motorola 4G Cellular Modem by significantly increasing IP data transfer rate and efficiency} 
+          by optimizing ARM11 Linux Kernel data path in Modem using recompiled kernels, Linux 'perf tools', and applying networking best practices.}
+        \item {\textbf{Recognized for collaboration with multiple internal groups and Legal Team }
+           in a successful defense of teams' work against a patent infringement claim.
+           }
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Engineer} % Job title
-    {ShitOne Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
+    {Senior Software Engineer} % Job title
+    {Prior to 1998} % Organization
+    {} % Location
+    {} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer.}
-        \item {Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
-      \end{cvitems}
+        \item {Held progressively responsible positions with Sony, Phillips,
+          Microware and Engineering Animation with accomplishments including the
+          \textbf{creation of video capture hardware and software, MPEG2 video
+          drivers, 2D graphics chip drivers and the creation of an extensive 2G
+          graphics library for embedded devices.}}
+        \end{cvitems}
     }
 
 %---------------------------------------------------------
