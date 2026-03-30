@@ -1,0 +1,197 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+%\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[rectangle,edge,right]{./examples/profile}
+\photo[circle,noedge,left]{./examples/ChrisProfilePicture}
+\name{Chris}{Venteicher}
+\position{Software Architect{\enskip\cdotp\enskip}Staff Software Engineer}
+\address{Williams Bay, WI}
+
+\mobile{262-607-2040}
+\email{chris@venteicher.org}
+%\homepage{venteicher.org}
+\github{cventeic}
+\linkedin{chris-venteicher}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {GE Medical}
+  %{Johnson Controls\\Milwaukee, WI}
+  %{Rockwell Automation\\Milwaukee, WI}
+  %{Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Senior Scientist, Advanced Technologies}
+% How the letter is opened
+\letteropening{Dear Hiring Manager and Recruitment Team}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Chris J. Venteicher~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+%\lettersection{About Me}
+
+%\lettersection{Why Johnson Controls?}
+\lettersection{Why GE?}
+GE's medical technology saves and improves lives. Making this technology better has a clear impact on the world.
+
+%Trek comes highly recommended as an employer that's doing interesting and challenging things to enrich the lives of its customers.
+
+%Rockwell uses technology to make production more efficient.  I have no doubt
+%  there are interesting and valuable technological problems to understand and
+%  solve that ultimately benefit customers and society in general.
+
+%Mecum is both a part of the community where I live and a great example of a company striving to use technology to provide a compelling and rewarding experience for its customers.
+
+%Johnson Controls building control products impact and benefit a huge number of people and businesses.
+%Adding value to Johnson Controls products means impacting lives in meaningful ways.
+
+\lettersection{Why Me?}
+I am an accomplished yet curious person who would very much enjoy discussing
+  the technical aspects of your business and how I may be able to contribute to
+  solutions.
+
+I am applying for this position because I am the guy who has "identified new technologies, explored their potential and driven advanced technology development"
+for years in both my professional positions and personal endeavors.
+
+I would love to take that passion and experience and apply it to accelerate GE's search for new and better ways to help people live longer and better lives.
+
+To this end, please take a look at my github repos, linked in project list and personal web site to get a full sense of my history and what I can bring to GE.
+
+I have demonstrated experience with many technologies of interest to GE Medical including:
+- Linux internals, kernel, networking protocols and device drivers
+- virtualization (libvirt, QEMU, KVM, virtio) and containers (docker, kubernetes)
+- GPUs (OpenGL shaders and a little work with OpenCL)
+- Complex algorithms like Hidden Markov Models and Genetic Algorithms
+- Performance optimization on ARM and X86 architectures
+
+
+%I have ported Linux to ARM devices (cellular modems) and have a strong hardware background as well.
+
+%Networking on Linux on embedded devices was a primary responsibility while at Motorola.
+
+
+% I have spent considerable time recently working with web technologies including
+% Angular.io and Kubernetes for container deployment.
+% I have extensive Linux and Ruby experience.
+% My Ruby experience has been very useful with using Chef in the past.
+
+I also have demonstrated interpersonal and leadership skills that enable me to
+  understand client requirements and collaborated to deliver the best possible
+  solutions.
+
+%I have held significant development and then architecture responsibility for IP
+%  and data networking components at the top of the LTE cellular modem stack and
+%  the general interface between Android and the modem.
+
+%I am a very competent C and Ruby programmer and long time Linux user and developer.
+
+%Please consider reviewing my LinkedIn profile and Github for insight into my capabilities and accomplishments.
+
+I would be glad to discuss any of my past work in addition to
+  discussing your business needs and how I could contribute.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}
